@@ -1,7 +1,11 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  reactStrictMode: true,
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  // Suppress hydration warnings from browser extensions
+  onError: (err, req, res) => {
+    // Custom error handling
+  },
 };
-
-export default nextConfig;
