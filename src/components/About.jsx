@@ -21,8 +21,8 @@ import { SiReact, SiNodedotjs, SiMongodb, SiTailwindcss, SiPostgresql } from "re
 export default function About() {
   const ref = useRef(null);
   const [mounted, setMounted] = useState(false);
-  const [yearsOfExperience, setYearsOfExperience] = useState(0);
-  const [projectsCompleted, setProjectsCompleted] = useState(0);
+  const [yearsOfExperience, setYearsOfExperience] = useState(0.5);
+  const [projectsCompleted, setProjectsCompleted] = useState(3);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   // Ensure component is mounted
@@ -37,8 +37,8 @@ export default function About() {
       const stepTime = 20;
       const steps = duration / stepTime;
 
-      let currentYears = 0;
-      let currentProjects = 0;
+      let currentYears = 0.5;
+      let currentProjects = 2;
 
       const interval = setInterval(() => {
         if (currentYears < 0.5) {
