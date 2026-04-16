@@ -209,7 +209,7 @@ export default function Skills() {
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full" />
           
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            Technologies and tools I've mastered over 0.5+ years of development journey
+            Technologies and tools I've worked with over 0.5+ years of development journey
           </p>
         </motion.div>
 

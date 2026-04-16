@@ -96,25 +96,24 @@ export default function About() {
 
   const education = [
     {
-      degree: "BSc (Hons) Top-up - Planning",
+      degree: "BIT Top-up planning",
       institution: "Colombo BIT (Expected)",
       period: "2026",
       description: "Planning to pursue BSc (Hons) Top-up degree",
       icon: FaGraduationCap,
       color: "from-purple-500 to-pink-500",
-      details: ["Advanced Computing", "Research Project", "Enterprise Development"]
+      details: ["Planning to start in 2026 after completing HND"]
     },
     {
-      degree: "HND in Information Technology",
+      diploma: "HND in Information Technology",
       institution: "Sri Lanka Institute of Advanced Technological Education (SLIATE)",
       period: "2023 - 2026",
       description: "Currently pursuing Higher National Diploma in IT",
       icon: FaUniversity,
-      color: "from-blue-500 to-cyan-500",
-      details: ["Full-stack development", "Database Management", "Software Engineering"]
+      color: "from-blue-500 to-cyan-500"
     },
     {
-      degree: "G.C.E. Advanced Level",
+      exam: "G.C.E. Advanced Level",
       institution: "Kirillawala National Collage - kadawatha",
       period: "2022",
       description: "ICT, Science for Technology, Bio Technology",
@@ -123,7 +122,7 @@ export default function About() {
       details: ["ICT - C", "Science for Technology - C", "Bio Technology - S"]
     },
     {
-      degree: "G.C.E. Ordinary Level",
+      exam: "G.C.E. Ordinary Level",
       institution: "Wedamulla maha vidyalaya - kelaniya",
       period: "2017",
       description: "Achieved 2As, 1B, 3C and 3S",
@@ -309,7 +308,7 @@ export default function About() {
                         <p className="text-sm text-gray-400 mb-2">{edu.institution}</p>
                         <p className="text-xs text-gray-500">{edu.description}</p>
                         <div className="flex flex-wrap gap-2 mt-2">
-                          {edu.details.map((detail, i) => (
+                          {(edu.details || []).map((detail, i) => (
                             <span key={i} className="text-xs px-2 py-1 rounded-full bg-white/5 text-gray-400">
                               {detail}
                             </span>
