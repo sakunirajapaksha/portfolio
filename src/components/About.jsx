@@ -241,7 +241,7 @@ export default function About() {
               </h3>
               <p className="text-gray-300 leading-relaxed mb-4">
                 I'm a passionate <span className="text-indigo-400 font-semibold">Full Stack Developer</span> from Sri Lanka 🇱🇰 
-                with 6 months of professional experience in full stack development. 
+                with 6 months of professional experience in full-stack development. 
                 I specialize in the <span className="text-purple-400 font-semibold">MERN stack</span> and love creating 
                 seamless digital experiences that solve real-world problems.
               </p>
