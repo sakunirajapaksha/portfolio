@@ -404,7 +404,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-sm text-gray-400">Quick call?</p>
-                <p className="text-white font-medium">+94 75 082 5613</p>
+                <p className="text-white font-medium">+94 75 082 5613 </p>
               </div>
             </div>
             <div className="w-px h-8 bg-white/10 hidden md:block" />
