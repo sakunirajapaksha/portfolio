@@ -22,7 +22,7 @@ export default function About() {
   const ref = useRef(null);
   const [mounted, setMounted] = useState(false);
   const [yearsOfExperience, setYearsOfExperience] = useState(0.5);
-  const [projectsCompleted, setProjectsCompleted] = useState(3);
+  const [projectsCompleted, setProjectsCompleted] = useState(5);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   // Ensure component is mounted
@@ -38,19 +38,19 @@ export default function About() {
       const steps = duration / stepTime;
 
       let currentYears = 0.5;
-      let currentProjects = 2;
+      let currentProjects = 5;
 
       const interval = setInterval(() => {
         if (currentYears < 0.5) {
           currentYears += 0.5 / steps;
           setYearsOfExperience(Number(Math.min(currentYears, 0.5).toFixed(1)));
         }
-        if (currentProjects < 3) {
-          currentProjects += 3 / steps;
-          setProjectsCompleted(Math.min(Math.floor(currentProjects), 3));
+        if (currentProjects < 5) {
+          currentProjects += 5 / steps;
+          setProjectsCompleted(Math.min(Math.floor(currentProjects), 5));
         }
 
-        if (currentYears >= 0.5 && currentProjects >= 3) {
+        if (currentYears >= 0.5 && currentProjects >= 5) {
           clearInterval(interval);
         }
       }, stepTime);
@@ -134,7 +134,7 @@ export default function About() {
 
   const experience = [
     {
-      title: "Backend Developer Intern",
+      title: "Full-Stack Developer Intern",
       company: "SLT Head Office - Colombo",
       period: "Sep 16, 2025 - Mar 16, 2026",
       duration: "6 months",
@@ -241,7 +241,7 @@ export default function About() {
               </h3>
               <p className="text-gray-300 leading-relaxed mb-4">
                 I'm a passionate <span className="text-indigo-400 font-semibold">Full Stack Developer</span> from Sri Lanka 🇱🇰 
-                with 6 months of professional experience in backend development. 
+                with 6 months of professional experience in full stack development. 
                 I specialize in the <span className="text-purple-400 font-semibold">MERN stack</span> and love creating 
                 seamless digital experiences that solve real-world problems.
               </p>
